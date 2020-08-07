@@ -1,7 +1,7 @@
 name: rich_text_widget
 description: A new Flutter package project.
-version: 0.1.5
-homepage: https://www.jianshu.com/u/bdc4b41a11d3
+version: 0.1.6
+homepage: https://github.com/liranhao/rich_text_widget
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
