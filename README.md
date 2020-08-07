@@ -37,7 +37,7 @@ RichTextWidget(
 )
 
 ```
-![avatar](/Users/01398010/Downloads/1596775848488.jpg)
+![avatar](https://upload-images.jianshu.io/upload_images/1350306-c734663f62e1cd49.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 参数说明
  #### RichTextWidget：
