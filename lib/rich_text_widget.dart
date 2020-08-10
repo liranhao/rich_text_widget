@@ -47,7 +47,9 @@ class RichTextWidget extends StatelessWidget {
       _resultRichTexts.add(TextSpan(
         text: richSubStr,
         style: model.richText.style,
-        recognizer: TapGestureRecognizer()..onTap = model.richText.onTap,
+        recognizer: model.richText.onTap != null
+            ? (TapGestureRecognizer()..onTap = model.richText.onTap)
+            : null,
       ));
       start = model.end;
       i++;

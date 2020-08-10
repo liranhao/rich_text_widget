@@ -53,7 +53,7 @@ class MyApp extends StatelessWidget {
                   BaseRichText(
                     "button",
                     style: TextStyle(color: Colors.red),
-                    onTap: () => {print("touch button")},
+                    // onTap: () => {print("touch button")},
                   ),
                 ],
               ),
