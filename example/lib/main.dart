@@ -63,27 +63,4 @@ class MyApp extends StatelessWidget {
       ),
     );
   }
-
-  Widget test() {
-    RichTextWidget(
-      // default Text
-      Text(
-        'You have pushed the button this many times:',
-        style: TextStyle(color: Colors.black),
-      ),
-      // rich text list
-      richTexts: [
-        BaseRichText(
-          "pushed",
-          style: TextStyle(color: Colors.yellow),
-          onTap: () => {print("touch pushed")},
-        ),
-        BaseRichText(
-          "button",
-          style: TextStyle(color: Colors.red),
-          onTap: () => {print("touch button")},
-        ),
-      ],
-    );
-  }
 }

@@ -1,6 +1,6 @@
 name: rich_text_widget
 description: 该库属于富文本组件，补充了Flutter富文本只能拼接组件的功能，该库应用于国际化文本非常便利，不用拆分字符串.
-version: 0.1.7
+version: 0.1.8
 homepage: https://github.com/liranhao/rich_text_widget
 
 environment:

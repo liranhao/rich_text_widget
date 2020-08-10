@@ -1,4 +1,4 @@
-name: demo
+name: example
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -35,6 +35,7 @@ dev_dependencies:
 
   rich_text_widget:
     path: ../
+
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
