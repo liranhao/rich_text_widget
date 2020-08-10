@@ -1,43 +1,34 @@
-# rich_text_widget
+富文本是很多App都需要的，而且Flutter也提供了富文本功能，但是对于做多语言的APP来说，RichText并不好用，或者说不能用，
+今天就给大家推荐一个第三方库 [rich_text_widget](https://github.com/liranhao/rich_text_widget)
 
-A new Flutter package project.
+使用起来简单又方便，不用分割字符串
+具体使用方法参考如下
 
-## Getting Started
-
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
-
-使用说明
 ```
 RichTextWidget(
-  //default Text
-  Text(
-    "You already have an account. Log in",
-    style: TextStyle(
-      fontSize: 12,
-      color: Color(0xff535353),
-    ),
-  ),
-  // richText List
-  richTexts: [
-    BaseRichText(
-      "Log in",
-      style: TextStyle(color: Color(0xffCA353A)),
-      onTap: () { // richText 点击事件
-        Navigator.pop(context);
-      },
+      // default Text
+      Text(
+        'You have pushed the button this many times:',
+        style: TextStyle(color: Colors.black),
+      ),
+      // rich text list
+      richTexts: [
+        BaseRichText(
+          "pushed",
+          style: TextStyle(color: Colors.yellow),
+          onTap: () => {print("touch pushed")},
+        ),
+        BaseRichText(
+          "button",
+          style: TextStyle(color: Colors.red),
+          onTap: () => {print("touch button")},
+        ),
+      ],
     )
-  ],
-)
-
 ```
-![avatar](https://upload-images.jianshu.io/upload_images/1350306-c734663f62e1cd49.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+展示效果如下
+![Simulator Screen Shot - iPhone 11 Pro - 2020-08-10 at 10.52.06.png](https://upload-images.jianshu.io/upload_images/1350306-2b5cdcf7b2864f8f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 
 参数说明
  #### RichTextWidget：
@@ -45,7 +36,7 @@ RichTextWidget(
 | Name        | type              |
 | ----------- | ----------------- |
 | defaultText | Text              |
-| richTexts   | List (BaseRichText)|
+| richTexts   | List \<BaseRichText>|
 
 #### BaseRichText: 
 
@@ -54,3 +45,4 @@ RichTextWidget(
 | data    | String    |
 | style   | TextStyle |
 | onTap   | Function  |
+
