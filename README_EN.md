@@ -1,4 +1,4 @@
-## [README of Chinese][readme]
+## [README of Chinese](readme)
 Rich text is required by many apps, and Flutter also provides rich text functions, but for multilingual apps, RichText is not easy to use, or 
 can’t be used.
 
