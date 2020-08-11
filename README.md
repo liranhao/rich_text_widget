@@ -1,4 +1,4 @@
-## [README of English](readme_en)
+## [README of English](README_EN.md)
 
 富文本是很多App都需要的，而且Flutter也提供了富文本功能，但是对于做多语言的APP来说，RichText并不好用，或者说不能用。
 
