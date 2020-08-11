@@ -5,7 +5,7 @@ can’t be used.
 [rich_text_widget](https://github.com/liranhao/rich_text_widget)is simple and convenient to use, no need to split the string
 
 
-####The specific usage method is as follows:
+#### The specific usage method is as follows:
 ```
 RichTextWidget(
       // default Text
