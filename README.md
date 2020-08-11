@@ -28,6 +28,7 @@ RichTextWidget(
     )
 ```
 展示效果如下
+
 ![Simulator Screen Shot - iPhone 11 Pro - 2020-08-10 at 10.52.06.png](https://upload-images.jianshu.io/upload_images/1350306-2b5cdcf7b2864f8f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/310)
 
 
