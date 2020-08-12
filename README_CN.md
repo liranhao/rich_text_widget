@@ -4,7 +4,7 @@
 
 [rich_text_widget](https://github.com/liranhao/rich_text_widget)使用起来简单又方便，不用分割字符串
 
-#### 具体使用方法参考如下
+#### 示例
 ```
 RichTextWidget(
       // default Text
