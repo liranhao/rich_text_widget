@@ -34,15 +34,13 @@ RichTextWidget(
 
 ## 参数说明
  #### RichTextWidget：
-
 | Name          | type                  |
-| -------------   -------------------   |
+| ------------- | --------------------- |
 | defaultText   | Text                  |
 | richTexts     | List \<BaseRichText>  |
 | caseSensitive | bool (defalut = true) |
 
 #### BaseRichText: 
-
 | Name    | type      |
 | ------- | --------- |
 | data    | String    |

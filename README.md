@@ -35,14 +35,14 @@ Demo display effect
 
 ## Props :
  #### RichTextWidget：
-
 | Name          | type                  |
-| -------------   -------------------   |
+| ------------- | --------------------- |
 | defaultText   | Text                  |
 | richTexts     | List \<BaseRichText>  |
 | caseSensitive | bool (defalut = true) |
-#### BaseRichText: 
 
+
+#### BaseRichText: 
 | Name    | type      |
 | ------- | --------- |
 | data    | String    |
