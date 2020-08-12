@@ -8,16 +8,16 @@ class RichTextWidget extends StatelessWidget {
   final Text defaultText;
   final List<BaseRichText> richTexts;
   final List<TextSpan> _resultRichTexts = [];
-  final bool caseSensitive; //是否忽略大小写
+  final bool caseSensitive; //Whether to ignore case
   RichTextWidget(this.defaultText,
       {this.richTexts = const [], this.caseSensitive = true}) {
     separateText();
   }
-  //分割字符串
+  //Split string
   separateText() {
     List<_RichTextModel> result = [];
     String defaultStr = defaultText.data;
-    //查找子串的位置
+    //Find the position of the substring
     richTexts.forEach((richText) {
       RegExp regex = RegExp(richText.data, caseSensitive: this.caseSensitive);
       Iterable<RegExpMatch> matchs = regex.allMatches(defaultStr);
@@ -35,12 +35,12 @@ class RichTextWidget extends StatelessWidget {
           .add(TextSpan(text: defaultText.data, style: defaultText.style));
       return;
     }
-    //根据start排序
+    //Sort by start
     result.sort(([a, b]) => a.start - b.start);
 
     int start = 0;
     int i = 0;
-    // 添加对应的TextSpan
+    // Add the corresponding TextSpan
     while (i < result.length) {
       _RichTextModel model = result[i];
       if (model.start > start) {

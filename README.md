@@ -1,10 +1,11 @@
-## [README of English](README_EN.md)
+## [README of Chinese](README_CN.md)
+Rich text is required by many apps, and Flutter also provides rich text functions, but for multilingual apps, RichText is not easy to use, or 
+can’t be used.
 
-富文本是很多App都需要的，而且Flutter也提供了富文本功能，但是对于做多语言的APP来说，RichText并不好用，或者说不能用。
+[rich_text_widget](https://github.com/liranhao/rich_text_widget)is simple and convenient to use, no need to split the string
 
-[rich_text_widget](https://github.com/liranhao/rich_text_widget)使用起来简单又方便，不用分割字符串
 
-#### 具体使用方法参考如下
+#### The specific usage method is as follows:
 ```
 RichTextWidget(
       // default Text
@@ -27,12 +28,11 @@ RichTextWidget(
       ],
     )
 ```
-展示效果如下
+Demo display effect
 
 ![Simulator Screen Shot - iPhone 11 Pro - 2020-08-10 at 10.52.06.png](https://upload-images.jianshu.io/upload_images/1350306-2b5cdcf7b2864f8f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/310)
 
-
-参数说明
+Props
  #### RichTextWidget：
 
 | Name        | type              |
@@ -47,4 +47,3 @@ RichTextWidget(
 | data    | String    |
 | style   | TextStyle |
 | onTap   | Function  |
-
