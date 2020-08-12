@@ -3,6 +3,7 @@ library rich_text_widget;
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 
+// RichTextWidget
 class RichTextWidget extends StatelessWidget {
   final Text defaultText;
   final List<BaseRichText> richTexts;
@@ -12,6 +13,7 @@ class RichTextWidget extends StatelessWidget {
       {this.richTexts = const [], this.caseSensitive = true}) {
     separateText();
   }
+  //分割字符串
   separateText() {
     List<_RichTextModel> result = [];
     String defaultStr = defaultText.data;
@@ -28,6 +30,11 @@ class RichTextWidget extends StatelessWidget {
         }
       });
     });
+    if (result.isEmpty) {
+      _resultRichTexts
+          .add(TextSpan(text: defaultText.data, style: defaultText.style));
+      return;
+    }
     //根据start排序
     result.sort(([a, b]) => a.start - b.start);
 
@@ -69,6 +76,7 @@ class RichTextWidget extends StatelessWidget {
   }
 }
 
+// BaseRichText
 class BaseRichText extends StatelessWidget {
   final String data;
   final TextStyle style;
@@ -86,6 +94,7 @@ class BaseRichText extends StatelessWidget {
   }
 }
 
+// RichTextModel
 class _RichTextModel {
   final int start;
   final int end;
