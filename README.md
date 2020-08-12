@@ -2,7 +2,7 @@
 Rich text is required by many apps, and Flutter also provides rich text functions, but for multilingual apps, RichText is not easy to use, or 
 can’t be used.
 
-[rich_text_widget](https://github.com/liranhao/rich_text_widget)is simple and convenient to use, no need to split the string
+[rich_text_widget](https://github.com/liranhao/rich_text_widget) is simple and convenient to use, no need to split the string
 
 
 #### The specific usage method is as follows:
