@@ -8,9 +8,12 @@ class RichTextWidget extends StatelessWidget {
   final Text defaultText;
   final List<BaseRichText> richTexts;
   final List<TextSpan> _resultRichTexts = [];
+  final int maxLines;
   final bool caseSensitive; //Whether to ignore case
   RichTextWidget(this.defaultText,
-      {this.richTexts = const [], this.caseSensitive = true}) {
+      {this.richTexts = const [],
+      this.caseSensitive = true,
+      this.maxLines = 1}) {
     separateText();
   }
   //Split string
@@ -71,6 +74,7 @@ class RichTextWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return RichText(
+      maxLines: maxLines,
       text: TextSpan(children: this._resultRichTexts),
     );
   }
