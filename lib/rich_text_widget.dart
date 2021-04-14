@@ -8,18 +8,20 @@ class RichTextWidget extends StatelessWidget {
   final Text defaultText;
   final List<BaseRichText> richTexts;
   final List<TextSpan> _resultRichTexts = [];
-  final int maxLines;
+  final int? maxLines;
   final bool caseSensitive; //Whether to ignore case
-  RichTextWidget(this.defaultText,
-      {this.richTexts = const [],
-      this.caseSensitive = true,
-      this.maxLines = 1}) {
+  RichTextWidget(
+    this.defaultText, {
+    this.richTexts = const [],
+    this.caseSensitive = true,
+    this.maxLines,
+  }) {
     separateText();
   }
   //Split string
   separateText() {
     List<_RichTextModel> result = [];
-    String defaultStr = defaultText.data;
+    String defaultStr = defaultText.data ?? "";
     //Find the position of the substring
     richTexts.forEach((richText) {
       RegExp regex = RegExp(richText.data, caseSensitive: this.caseSensitive);
@@ -39,7 +41,7 @@ class RichTextWidget extends StatelessWidget {
       return;
     }
     //Sort by start
-    result.sort(([a, b]) => a.start - b.start);
+    result.sort((a, b) => a.start - b.start);
 
     int start = 0;
     int i = 0;
@@ -83,7 +85,7 @@ class RichTextWidget extends StatelessWidget {
 // BaseRichText
 class BaseRichText extends StatelessWidget {
   final String data;
-  final TextStyle style;
+  final TextStyle? style;
   final onTap;
   BaseRichText(this.data, {this.style, this.onTap});
   @override
@@ -103,5 +105,9 @@ class _RichTextModel {
   final int start;
   final int end;
   final BaseRichText richText;
-  _RichTextModel({this.start, this.end, this.richText});
+  _RichTextModel({
+    required this.start,
+    required this.end,
+    required this.richText,
+  });
 }
