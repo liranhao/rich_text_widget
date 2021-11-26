@@ -10,11 +10,15 @@ class RichTextWidget extends StatelessWidget {
   final List<TextSpan> _resultRichTexts = [];
   final int? maxLines;
   final bool caseSensitive; //Whether to ignore case
+  final TextOverflow overflow;
+  final TextAlign textAlign;
   RichTextWidget(
     this.defaultText, {
     this.richTexts = const [],
     this.caseSensitive = true,
     this.maxLines,
+    this.overflow = TextOverflow.clip,
+    this.textAlign = TextAlign.start,
   }) {
     separateText();
   }
@@ -77,6 +81,8 @@ class RichTextWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return RichText(
       maxLines: maxLines,
+      overflow: this.overflow,
+      textAlign: this.textAlign,
       text: TextSpan(children: this._resultRichTexts),
     );
   }

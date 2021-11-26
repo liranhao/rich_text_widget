@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
                   child: RichTextWidget(
                     // default Text
                     Text(
-                      'I agree to the 《Terms of Service》《Privacy Policy》',
+                      'I agree to the aaaaaaaaa 《Terms of Service》《Privacy Policy》',
                       style: TextStyle(color: Colors.black),
                     ),
                     // rich text list
@@ -43,7 +43,7 @@ class MyApp extends StatelessWidget {
                       BaseRichText(
                         "《Privacy Policy》",
                         style: TextStyle(color: Colors.red),
-                        // onTap: () => {print("touch button")},
+                        onTap: () => {print("touch button")},
                       ),
                     ],
                   ),
