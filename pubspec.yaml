@@ -1,6 +1,6 @@
 name: rich_text_widget
 description: The library is very convenient to apply to internationalized text without splitting strings.
-version: 0.2.6
+version: 0.2.7
 homepage: https://github.com/liranhao/rich_text_widget
 
 environment:

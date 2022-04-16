@@ -1,7 +1,7 @@
 library rich_text_widget;
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
+import 'package:flutter/material.dart';
 
 // RichTextWidget
 class RichTextWidget extends StatelessWidget {
@@ -83,7 +83,9 @@ class RichTextWidget extends StatelessWidget {
       maxLines: maxLines,
       overflow: this.overflow,
       textAlign: this.textAlign,
-      text: TextSpan(children: this._resultRichTexts),
+      text: TextSpan(
+          children: this._resultRichTexts,
+          style: TextStyle(color: Colors.black)),
     );
   }
 }

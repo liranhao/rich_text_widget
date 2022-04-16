@@ -9,3 +9,7 @@
 ## [0.2.6] - TODO: Add release date.
 
 * TODO: add overflow, textAlign
+
+## [0.2.7] - TODO: Add release date.
+
+* TODO: add defalut TextStyle
